@@ -1,6 +1,12 @@
 spring:
   application:
-    name: discovery-service
+    name: zuul-service
   cloud:
     config:
-      uri: ${SPRING_CONFIG_URI:http://localhost:8801}
+      uri: ${SPRING_CONFIG_URI:http://192.168.1.158:8901}
+    discovery:
+      client:
+        simple:
+          local:
+            service-id: config-service
+      enabled: true
