@@ -8,12 +8,4 @@ spring:
 
 
 
-zuul:
-  routes:
-    test:
-      path: /api/test/**
-      url : discovery-client
-      stripPrefix : true   #是否去掉路径前缀进行映射  默认是true 去掉
-    test4:
-      path : /t/**
-      url : discovery-client1
+

@@ -8,3 +8,4 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.1.158:8801/eureka/
     register-with-eureka: true  #是否向服务中心注册 true是 false否
+
